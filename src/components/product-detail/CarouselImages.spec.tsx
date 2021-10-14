@@ -18,7 +18,9 @@ describe("<CarouselImages />", () => {
         />).toJSON()
         expect(tree?.children?.length).toBe(1);
         done();
-    })
+    });
+
+
 
     // it('renders correctly', async () => {
     //     renderer.create(<> <CarouselImages />  </>);
