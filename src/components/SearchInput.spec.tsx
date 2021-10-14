@@ -33,4 +33,8 @@ describe("<SearchInput />", () => {
         done();
     });
 
+    it('snapshot', () => {
+        expect(tree).toMatchSnapshot();
+    });
+
 })

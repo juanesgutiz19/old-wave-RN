@@ -11,7 +11,7 @@ const windowHeight = Dimensions.get('window').height;
 
 
 interface Props {
-    product: ShoppingCartItem,
+    product: any,
     onAddToCart?: () => void;
     onSubstractFromCart: () => void;
 }

@@ -24,5 +24,9 @@ describe("<ProductCard/>", () => {
         done();
     });
 
+    it('snapshot', () => {
+        expect(tree).toMatchSnapshot();
+    });
+
     
 } )

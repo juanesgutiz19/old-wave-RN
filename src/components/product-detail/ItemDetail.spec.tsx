@@ -38,7 +38,7 @@ describe("<ItemDetail />", () => {
     });
 
 
-    it('snapshot ----------', () => {
+    it('snapshot', () => {
         expect(tree.toJSON()).toMatchSnapshot();
     });
 
