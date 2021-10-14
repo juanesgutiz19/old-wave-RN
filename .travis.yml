@@ -14,10 +14,12 @@ before_script:
 script:
   - npm ci
   - npm run test
+
 # safelist
 branches:
   only:
   - master
+
 jobs:
   include:
     - stage: deploy
