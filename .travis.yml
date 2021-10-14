@@ -13,7 +13,13 @@ before_script:
   - npm install -g expo-cli
 script:
   - npm ci
-  # - npx jest --ci
+  - npm run test
+
+# safelist
+branches:
+  only:
+  - master
+
 jobs:
   include:
     - stage: deploy
