@@ -3,10 +3,6 @@ import { useState, useEffect } from 'react';
 export const useDebouncedValue = (input: string = '', time: number = 500) => {
 
     const [debouncedValue, setDebouncedValue] = useState(input);
-
-
-    console.log('Hola Diosa');
-    
     useEffect(() => {
 
         const timeout = setTimeout(() => {
