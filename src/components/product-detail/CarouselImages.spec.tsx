@@ -20,8 +20,6 @@ describe("<CarouselImages />", () => {
         done();
     });
 
-
-
     // it('renders correctly', async () => {
     //     renderer.create(<> <CarouselImages />  </>);
     // });
