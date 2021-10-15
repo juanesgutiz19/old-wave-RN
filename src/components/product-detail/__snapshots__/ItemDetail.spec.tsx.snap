@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<ItemDetail /> snapshot ---------- 1`] = `
+exports[`<ItemDetail /> snapshot 1`] = `
 <View
   style={
     Object {
