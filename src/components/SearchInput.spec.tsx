@@ -27,7 +27,6 @@ describe("<SearchInput />", () => {
     it("verify some style props of <SearchInput /> ", (done) => {
 
         const expectedStyle = { backgroundColor: "#772CE8", flex: 1 };
-        console.log('------',tree.props)
         expect(tree.props.style).toMatchObject(expectedStyle);
 
         done();

@@ -15,6 +15,7 @@ describe("<CarouselImages />", () => {
         activeSlide={2}
         setActiveSlide={() => { }}
     />).toJSON()
+
     it("verify has 1 child", async (done) => {
         expect(tree?.children?.length).toBe(1);
         done();
@@ -22,7 +23,20 @@ describe("<CarouselImages />", () => {
 
     it("verify type of <CarouselImages /> ", (done) => {
         expect(tree?.type).toBe("View");
-        console.log(tree.props)
+        done();
+    });
+
+    it("verify size of item in <CarouselImages /> children", (done) => {
+
+        const expectedSize = { itemWidth: 100, itemHeight: 100 };
+
+        expect(tree?.children[0].props).toMatchObject(expectedSize);
+        done();
+    });
+
+    it("verify type of <CarouselImages /> children", (done) => {
+        expect(tree?.children[0].type).toBe("RCTScrollView");
+        console.log(tree.children)
         done();
     });
 
@@ -30,8 +44,5 @@ describe("<CarouselImages />", () => {
         expect(tree).toMatchSnapshot();
     });
 
-    // it('renders correctly', async () => {
-    //     renderer.create(<> <CarouselImages />  </>);
-    // });
 
 })
