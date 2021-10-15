@@ -32,4 +32,8 @@ describe("<ResellerCard />", () => {
         done();
     });
 
+    it('snapshot', () => {
+        expect(tree).toMatchSnapshot();
+    });
+
 })

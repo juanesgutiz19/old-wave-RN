@@ -3,10 +3,6 @@ import { View, ActivityIndicator, StyleSheet } from 'react-native'
 import { Image } from 'react-native-elements'
 import { Pagination } from 'react-native-snap-carousel'
 import Carousel from 'react-native-snap-carousel'
-// import { size } from 'lodash';
-
-
-
 
 
 export const CarouselImages = (params: any) => {
