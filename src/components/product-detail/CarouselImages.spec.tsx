@@ -36,7 +36,6 @@ describe("<CarouselImages />", () => {
 
     it("verify type of <CarouselImages /> children", (done) => {
         expect(tree?.children[0].type).toBe("RCTScrollView");
-        console.log(tree.children)
         done();
     });
 
