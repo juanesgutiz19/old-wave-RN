@@ -22,7 +22,7 @@ jobs:
   include:
     - stage: deploy
       node_js: lts/*
-      if: if: type = push
+      if: type = push
       script:
         - npm ci
         - npx expo login -u $EXPO_USERNAME -p $EXPO_PASSWORD
